@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,74 +6,114 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fff3e6;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fa;
     color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
     text-align: center;
-    padding: 20px;
 }
 
 header {
-    background-color: #ff99cc;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 h1 {
-    color: #ff3399;
+    font-family: 'Roboto', sans-serif;
+    color: #1c1c1c;
     font-size: 36px;
+    font-weight: 700;
+}
+
+.tagline {
+    font-size: 16px;
+    color: #777;
+    margin-top: 10px;
 }
 
 .checkout {
-    background-color: #f8e0f8;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #d5006d;
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.price {
-    font-size: 24px;
-    color: #ff3399;
-    font-weight: bold;
-}
-
-form {
+    padding: 20px;
+    background-color: #fafbfc;
+    border-radius: 8px;
     margin-top: 20px;
 }
 
-input {
-    width: 80%;
-    padding: 10px;
+h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.details {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.input-group {
     margin-bottom: 15px;
-    border: 1px solid #d5b0c4;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
+    outline: none;
+    background-color: #f8f8f8;
+}
+
+input:focus {
+    border-color: #3e98c7;
+    box-shadow: 0 0 5px rgba(62, 152, 199, 0.3);
 }
 
 button {
-    background-color: #ff3399;
+    background-color: #3e98c7;
     color: white;
+    padding: 15px 0;
+    font-size: 16px;
     border: none;
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
     border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #ff1a75;
+    background-color: #317fa5;
+}
+
+.agreement {
+    font-size: 14px;
+    color: #777;
+    margin-top: 15px;
 }
 
 footer {
     margin-top: 30px;
-    font-size: 14px;
+    font-size: 12px;
     color: #888;
 }
 
