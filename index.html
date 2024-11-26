@@ -4,42 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exclusive Monthly Subscription</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to the "Vlad`s Subscription Service"!</h1>
-        <p>Your personalized monthly experience starts here.</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Vlad`s Subscription</h1>
+            <p class="tagline">Exclusive Monthly Services Just For You</p>
+        </header>
 
-    <section class="checkout">
-        <h2>Your Subscription Details</h2>
-        <p>For just a few <span class="price">daily blowjobs/month</span>, enjoy monthly delights and intimate experiences that will keep you coming back for more.</p>
+        <section class="checkout">
+            <h2>Your Monthly Subscription</h2>
+            <p class="details">Get access to unlimited monthly experiences for just <strong>29 Blowjobs/month</strong>. Every month brings something new and exciting—ready to indulge?</p>
+            
+            <form id="checkout-form">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
 
-        <p>Every month, you get: <strong>Unlimited indulgence, tailored to your tastes!</strong></p>
+                <div class="input-group">
+                    <label for="card-number">Credit Card Number</label>
+                    <input type="text" id="card-number" name="card-number" required placeholder="Enter your card number">
+                </div>
 
-        <form id="checkout-form">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required placeholder="Enter your name">
+                <div class="input-group">
+                    <label for="expiry-date">Expiration Date</label>
+                    <input type="month" id="expiry-date" name="expiry-date" required>
+                </div>
 
-            <label for="card-number">BJ amount:</label>
-            <input type="text" id="card-number" name="card-number" required placeholder="Enter your card number">
+                <div class="input-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" required placeholder="Enter CVV">
+                </div>
 
-            <label for="expiry-date">Expiration Date: 12.01.2025</label>
-            <input type="month" id="expiry-date" name="expiry-date" required>
+                <button type="submit">Subscribe Now</button>
+            </form>
 
-            <label for="cvv">CVV:</label>
-            <input type="text" id="cvv" name="cvv" required placeholder="Enter CVV">
+            <p class="agreement">By clicking Subscribe Now, you agree to receive monthly surprises from us. Don't worry, you'll love it!</p>
+        </section>
 
-            <button type="submit">Subscribe Now</button>
-        </form>
-
-        <p>By signing up, you're agreeing to receive exclusive daily treats that you’ll never forget. Ready to commit?</p>
-    </section>
-
-    <footer>
-        <p>Disclaimer: This subscription is NOT auto renewable or refundable.</p>
-    </footer>
-
+        <footer>
+            <p>&copy; 2024 Vlad`s Subscription | All Rights Reserved</p>
+        </footer>
+    </div>
 </body>
 </html>
